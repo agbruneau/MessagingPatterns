@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messaging Architecture Patterns Explorer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'navy': {
+                '50': '#f0f4fa',
+                '100': '#e0eaf6',
+                '200': '#c8d9ee',
+                '300': '#a4c2e3',
+                '400': '#7b9fd4',
+                '500': '#5d7ec2',
+                '600': '#4a67ac',
+                '700': '#3d5490',
+                '800': '#354876',
+                '900': '#2e3e60',
+                '950': '#1f2a44',
+              },
+            },
+            animation: {
+              'pulse-fast': 'pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'slide-in': 'slide-in 0.5s ease-out forwards',
+              'fade-in': 'fade-in 0.5s ease-in-out forwards',
+            },
+            keyframes: {
+              'slide-in': {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+               'fade-in': {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-navy-950 text-navy-100">
+    <div id="root"></div>
+  </body>
+</html>

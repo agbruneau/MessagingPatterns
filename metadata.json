@@ -1,0 +1,5 @@
+{
+  "name": "Messaging Architecture Patterns Explorer",
+  "description": "An interactive web application for architects, developers, and students to explore, compare, and simulate major messaging and event-driven architecture patterns. Includes an AI-powered assistant to guide pattern selection.",
+  "requestFramePermissions": []
+}
